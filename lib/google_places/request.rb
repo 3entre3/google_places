@@ -15,6 +15,11 @@ module GooglePlaces
     PAGETOKEN_URL     = 'https://maps.googleapis.com/maps/api/place/search/json'
     RADAR_SEARCH_URL  = 'https://maps.googleapis.com/maps/api/place/radarsearch/json'
     AUTOCOMPLETE_URL  = 'https://maps.googleapis.com/maps/api/place/autocomplete/json'
+    
+    default_timeout 3
+    open_timeout 2
+    write_timeout 1
+    read_timeout 3
 
     # Search for Spots at the provided location
     #
